@@ -7,7 +7,7 @@
       <div class="headers-content">
         <ul class="headers-list">
           <li class="header-item">
-            <a class="header-item-link hao123" href="#">好123萌主页</a>
+            <router-link class="header-item-link hao123" to="/hao123moe">好123萌主页</router-link>
           </li>
           <li class="header-item">
             <a class="header-item-link bilibili" href="#">哔哩哔哩</a>
@@ -31,11 +31,13 @@ export default {
   @myBlue: #1296db;
   body {
     cursor: url("../assets/cursor.cur"),auto;
+    width: 100%;
+    min-height: 100vh;
     line-height: 1.15;
     font-size: 1vw;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
   }
-  div{
+  body,div{
     margin: 0;
     padding: 0;
     border: 0;
