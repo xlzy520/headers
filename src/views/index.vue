@@ -32,7 +32,7 @@ export default {
   body {
     cursor: url("../assets/cursor.cur"),auto;
     line-height: 1.15;
-    font-size: 16px;
+    font-size: 1vw;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
   }
   div{
@@ -55,17 +55,17 @@ export default {
   }
   .headers-container{
     position: absolute;
-    top: 25%;
-    left: 25%;
+    top: 20%;
+    left: 20%;
     color: #c99;
     text-align: center;
     ::selection{
       color: @myBlue;
     }
 
-    .headers-title+h1{
-      font-size: 28px;
-      margin-bottom: 36px;
+    .headers-title>h1{
+      font-size: 2.5vw;
+      margin-bottom: 2.5vw;
     }
 
     .headers-content{
@@ -81,7 +81,7 @@ export default {
             text-decoration: underline;
           }
           a.header-item-link{
-            font-size: 1.8vw;
+            font-size: 2vw;
           }
         }
       }
