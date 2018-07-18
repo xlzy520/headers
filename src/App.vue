@@ -11,11 +11,14 @@ export default {
 </script>
 
 <style>
-body,
-div {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-font-smoothing: subpixel-antialiased;
+  body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
 </style>
