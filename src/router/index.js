@@ -7,8 +7,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
+      name: '初始页',
       component: () => import('@/views/index')
+    },
+    {
+      path: '/hao123moe',
+      name: '好123萌主页',
+      component: () => import('@/views/hao123moe')
     }
   ]
 })
