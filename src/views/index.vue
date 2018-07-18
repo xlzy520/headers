@@ -37,16 +37,6 @@ export default {
     font-size: 1vw;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
   }
-  body,div{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    -webkit-font-smoothing: subpixel-antialiased;
-  }
-  a{
-    color: inherit;
-    text-decoration: none;
-  }
   .main-container{
     position: fixed;
     top: 0;
