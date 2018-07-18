@@ -5,6 +5,17 @@
         <h1>以下是各个我模仿的网站的头部</h1>
       </div>
       <div class="headers-content">
+        <ul class="headers-list">
+          <li class="header-item">
+            <a class="header-item-link hao123" href="#">好123萌主页</a>
+          </li>
+          <li class="header-item">
+            <a class="header-item-link bilibili" href="#">哔哩哔哩</a>
+          </li>
+          <li class="header-item">
+            <a class="header-item-link banciyuan" href="#">半次元</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -17,8 +28,10 @@ export default {
 </script>
 
 <style lang="less">
+  @myBlue: #1296db;
   body {
-    line-height: 1;
+    cursor: url("../assets/cursor.cur"),auto;
+    line-height: 1.15;
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
   }
@@ -28,6 +41,10 @@ export default {
     border: 0;
     -webkit-font-smoothing: subpixel-antialiased;
   }
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
   .main-container{
     position: fixed;
     top: 0;
@@ -35,21 +52,38 @@ export default {
     left: 0;
     right: 0;
     background: #fff url("//activity.hdslb.com/blackboard/static/20180416/b8f2b74d0482aed61472c7065dc1ed56/images/m6kmoznp0p.jpg") center/cover no-repeat;
+  }
+  .headers-container{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: #c99;
+    text-align: center;
+    ::selection{
+      color: @myBlue;
+    }
 
-    .headers-container{
-      position: absolute;
-      top: 40%;
-      left: 25%;
-      color: #c99;
-      text-align: center;
+    .headers-title+h1{
+      font-size: 28px;
+      margin-bottom: 36px;
+    }
 
-      .headers-title+h1{
-        font-size: 28px;
-        margin-bottom: 36px;
-      }
+    .headers-content{
 
-      .headers-content{
+      .headers-list{
+        list-style-type: none;
 
+        .header-item{
+          padding: 1vw 5vw;
+
+          a:hover{
+            color: inherit;
+            text-decoration: underline;
+          }
+          a.header-item-link{
+            font-size: 1.8vw;
+          }
+        }
       }
     }
   }
