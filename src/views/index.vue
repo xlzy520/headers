@@ -10,7 +10,7 @@
             <router-link class="header-item-link hao123" to="/hao123moe">好123萌主页</router-link>
           </li>
           <li class="header-item">
-            <a class="header-item-link bilibili" href="/bilibili">哔哩哔哩</a>
+            <router-link class="header-item-link bilibili" to="/bilibili">哔哩哔哩</router-link>
           </li>
           <li class="header-item">
             <a class="header-item-link banciyuan" href="#">半次元</a>
