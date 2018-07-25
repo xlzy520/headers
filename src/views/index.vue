@@ -13,7 +13,7 @@
             <router-link class="header-item-link bilibili" to="/bilibili">哔哩哔哩</router-link>
           </li>
           <li class="header-item">
-            <a class="header-item-link banciyuan" href="#">半次元</a>
+            <router-link class="header-item-link banciyuan" to="#">半次元</router-link>
           </li>
         </ul>
       </div>
