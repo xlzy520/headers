@@ -33,8 +33,14 @@
           </div>
         </div>
       </div>
-      <div id="banner_link" class="head-banner">
-
+      <div id="banner_link" class="head-banner" style="background-image: url('https://i0.hdslb.com/bfs/archive/30d45ce269948eae8ed650e5ce03a2ca463a5d77.png');">
+        <div class="head-content bili-wrapper">
+          <div class="search">
+            <form action="" class="searchform"></form>
+            <a href="#" class="link-ranking"></a>
+          </div>
+          <a href="#" class="head-logo" style="background-image: url('https://i0.hdslb.com/bfs/archive/6063fb40e90a17912b71d2cfd4ea56f69abb70de.png');"></a>
+        </div>
       </div>
     </div>
   </div>
@@ -83,6 +89,16 @@ export default {
     position: relative;
     z-index: 10000;
     background: #fff;
+    .bili-wrapper{
+      width: 1160px;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 1400px){
+      .bili-wrapper{
+        width: 980px;
+      }
+    }
+
     .bili-icon{
       display: inline-block;
       background-image: url("https://static.hdslb.com/images/base/icons.png");
@@ -104,10 +120,7 @@ export default {
       z-index: 200;
       height: 42px;
       color: #222;
-      .bili-wrapper{
-        margin: 0 auto ;
-        width: 980px;
-        .nav-con{
+      .nav-con{
 
           ul{
             list-style: none;
@@ -153,7 +166,7 @@ export default {
             }
           }
         }
-        .up-load{
+      .up-load{
           position: relative;
           width: 58px;
           height: 42px;
@@ -170,7 +183,6 @@ export default {
             border-radius: 0 0 6px 6px;
           }
         }
-      }
       .blur-bg{
         position: absolute;
         top: 0;
@@ -194,12 +206,29 @@ export default {
     }
 
     .head-banner{
-      background-image: url("https://i0.hdslb.com/bfs/archive/30d45ce269948eae8ed650e5ce03a2ca463a5d77.png");
       position: relative;
       height: 170px;
       z-index: 199;
       margin-top: -42px;
       background: #eee;
+      background-position: center -10px;
+      background-repeat: no-repeat;
+      .head-content{
+        position: relative;
+        height: 170px;
+        .head-logo{
+          position: absolute;
+          width: 220px;
+          height: 105px;
+          left: 24px;
+          top: 55px;
+          background: transparent no-repeat;
+          z-index: 10;
+        }
+        .search{
+
+        }
+      }
     }
   }
 </style>
