@@ -14,6 +14,11 @@ export default new Router({
       path: '/hao123moe',
       name: '好123萌主页',
       component: () => import('@/views/hao123moe')
+    },
+    {
+      path: '/bilibili',
+      name: '哔哩哔哩',
+      component: () => import('@/views/bilibili')
     }
   ]
 })
