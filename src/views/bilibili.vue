@@ -55,9 +55,9 @@
 </template>
 
 <script>
-    export default {
-        name: 'bilibili'
-    }
+export default {
+  name: 'bilibili'
+}
 </script>
 
 <style lang="less">
