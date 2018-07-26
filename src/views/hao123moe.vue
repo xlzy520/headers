@@ -31,13 +31,9 @@ export default {
 </script>
 
 <style lang="less">
-  @initHeight: 599;
-  .height(@height){
-    height: (@height/@initHeight)*100vh;
-  }
   .header-placeholder{
     width: 100%;
-    .height(51);
+    height: 51px;
   }
   .clearfix:after {
     clear: both;
@@ -63,7 +59,7 @@ export default {
 
       .logo-section{
         float: left;
-        .height(50);
+        height: 50px;
 
         .hao123-logo{
           background-image: url(http://s2.hao123img.com/resource/moe/pkg/aio-623880a_z.9b21303.png);
@@ -72,7 +68,7 @@ export default {
           float: left;
           display: inline;
           width: 101px;
-          .height(28);
+          height: 28px;
           margin-top: 10px;
           text-indent: -999em;
         }
@@ -81,7 +77,7 @@ export default {
           .hao123-logo;
           background-position: -210px -38px;
           width: 70px;
-          .height(23);
+          height: 23px;
           margin-top: 15px;
           margin-left: 10px;
         }
