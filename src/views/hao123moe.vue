@@ -32,6 +32,7 @@ export default {
 
 <style lang="less">
   .header-placeholder{
+    font: 12px/1.5 arial,SimSun,helvetica,sans-serif;
     width: 100%;
     height: 51px;
   }
