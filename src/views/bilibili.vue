@@ -36,8 +36,13 @@
       <div id="banner_link" class="head-banner" style="background-image: url('https://i0.hdslb.com/bfs/archive/30d45ce269948eae8ed650e5ce03a2ca463a5d77.png');">
         <div class="head-content bili-wrapper">
           <div class="search">
-            <form action="" class="searchform"></form>
-            <a href="#" class="link-ranking"></a>
+            <form action="" class="searchform">
+              <input value class="search-keyword"/>
+              <button class="search-submit" type="submit"></button>
+            </form>
+            <a href="#" class="link-ranking">
+              <span>排行榜</span>
+            </a>
           </div>
           <a href="#" class="head-logo" style="background-image: url('https://i0.hdslb.com/bfs/archive/6063fb40e90a17912b71d2cfd4ea56f69abb70de.png');"></a>
         </div>
@@ -226,7 +231,48 @@ export default {
           z-index: 10;
         }
         .search{
+          position: absolute;
+          bottom: 20px;
+          right: 0;
+          width: 268px;
+          height: 32px;
+          padding: 2px 2px 2px 72px;
+          background-color: rgba(0,0,0,.12);
+          border-radius: 6px;
+          font-size: 12px;
+          z-index: 10;
+          .searchform{
+            background-color: #fff;
+            display: block;
+            height: 32px;
+            border-radius: 4px;
+            transition: background-color .2s;
+           .search-keyword{
+             height: 32px;
+             line-height: 32px;
+             border: 0;
+           }
+            button{
 
+            }
+          }
+          .link-ranking{
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 68px;
+            height: 32px;
+            line-height: 32px;
+            background-color: #fff;
+            border-radius: 4px;
+            transition: background-color .2s;
+            span{
+              display: inline-block;
+              padding-left: 26px;
+              color: #f25d8e;
+              background: url("https://static.hdslb.com/images/base/icons.png") -659px -655px no-repeat;
+            }
+          }
         }
       }
     }
