@@ -1,6 +1,10 @@
-export function setTitleAndIcon(context) {
-  document.title = context.$route.name
-  const iconUrl = context.$route.meta.iconUrl
+/**
+ * 读取路由配置设置title和icon
+ * @param context
+ */
+export function setTitleAndIcon(route) {
+  document.title = route.$route.name
+  const iconUrl = route.$route.meta.iconUrl
   const iconNode = document.createElement('link')
   iconNode.rel = 'shortcut icon'
   iconNode.href = iconUrl

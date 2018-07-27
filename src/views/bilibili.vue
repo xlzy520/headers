@@ -50,6 +50,7 @@
              style="background-image: url('https://i0.hdslb.com/bfs/archive/6063fb40e90a17912b71d2cfd4ea56f69abb70de.png');"></a>
         </div>
       </div>
+      div.bili-wrapper>div#primary_menu.primary-menu>ul.nav-menu>li*20>a[href=#]
     </div>
   </div>
 </template>
@@ -64,7 +65,7 @@ export default {
     }
   },
   mounted() {
-    setTitleAndIcon(this)
+    setTitleAndIcon(this.$route)
   }
 }
 </script>
@@ -83,6 +84,7 @@ export default {
 
   * {
     margin: 0;
+    border: 0;
     padding: 0;
   }
 
