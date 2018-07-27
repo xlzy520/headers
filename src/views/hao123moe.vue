@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import { setTitleAndIcon } from '@/utils/setTitleAndIcon'
+
 export default {
   name: 'hao123moe',
   data() {
@@ -33,7 +35,7 @@ export default {
     }
   },
   mounted() {
-    document.title = this.$route.name
+    setTitleAndIcon(this)
   }
 }
 </script>

@@ -55,6 +55,7 @@
 </template>
 
 <script>
+import { setTitleAndIcon } from '@/utils/setTitleAndIcon'
 export default {
   name: 'bilibili',
   data() {
@@ -63,7 +64,7 @@ export default {
     }
   },
   mounted() {
-    document.title = this.$route.name
+    setTitleAndIcon(this)
   }
 }
 </script>
