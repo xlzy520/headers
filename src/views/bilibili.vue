@@ -56,7 +56,15 @@
 
 <script>
 export default {
-  name: 'bilibili'
+  name: 'bilibili',
+  data() {
+    return {
+
+    }
+  },
+  mounted() {
+    document.title = this.$route.name
+  }
 }
 </script>
 

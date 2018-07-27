@@ -26,7 +26,15 @@
 
 <script>
 export default {
-  name: 'hao123moe'
+  name: 'hao123moe',
+  data() {
+    return {
+
+    }
+  },
+  mounted() {
+    document.title = this.$route.name
+  }
 }
 </script>
 
