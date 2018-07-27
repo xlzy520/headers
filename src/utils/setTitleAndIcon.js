@@ -3,8 +3,8 @@
  * @param context
  */
 export function setTitleAndIcon(route) {
-  document.title = route.$route.name
-  const iconUrl = route.$route.meta.iconUrl
+  document.title = route.name
+  const iconUrl = route.meta.iconUrl
   const iconNode = document.createElement('link')
   iconNode.rel = 'shortcut icon'
   iconNode.href = iconUrl
