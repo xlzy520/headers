@@ -39,7 +39,7 @@
                 <div class="head-content bili-wrapper">
                     <div class="search">
                         <form action="" class="searchform">
-                            <input value class="search-keyword"/>
+                            <input value class="search-keyword" placeholder="别睡觉啦，今夜凌晨有超长月全食"/>
                             <button class="search-submit" type="submit"></button>
                         </form>
                         <a href="#" class="link-ranking">
@@ -252,17 +252,38 @@ export default {
                     z-index: 10;
                     .searchform {
                         background-color: #fff;
+                        background-color: hsla(0,0%,100%,.88);
                         display: block;
                         height: 32px;
                         border-radius: 4px;
                         transition: background-color .2s;
                         .search-keyword {
+                            float: left;
+                            width: 200px;
+                            outline: none;
+                            border-radius: 4px;
                             height: 32px;
                             line-height: 32px;
                             border: 0;
+                            padding: 0 12px;
+                            background-color: transparent;
+                            font-size: 12px;
+                            color: #222;
+                            overflow: hidden;
                         }
-                        button {
-
+                        .search-submit {
+                            position: absolute;
+                            display: block;
+                            right: 0;
+                            width: 48px;
+                            height: 32px;
+                            background: url(//static.hdslb.com/images/base/icons.png) -653px -720px;;
+                            border: 0;
+                            outline: none;
+                            cursor: pointer;
+                            &:hover{
+                                background-position: -718px -720px;
+                            }
                         }
                     }
                     .link-ranking {
@@ -273,6 +294,7 @@ export default {
                         height: 32px;
                         line-height: 32px;
                         background-color: #fff;
+                        background-color: hsla(0,0%,100%,.88);
                         border-radius: 4px;
                         transition: background-color .2s;
                         span {
