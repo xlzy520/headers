@@ -50,24 +50,128 @@
              style="background-image: url('https://i0.hdslb.com/bfs/archive/6063fb40e90a17912b71d2cfd4ea56f69abb70de.png');"></a>
         </div>
       </div>
-      div.bili-wrapper>div#primary_menu.primary-menu>ul.nav-menu>li*20>a[href=#]
+      <div class="bili-wrapper">
+        <div id="primary_menu" class="primary-menu">
+          <ul class="nav-menu">
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span></span>
+                <div class="nav-name"></div>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import { setTitleAndIcon } from '@/utils/setTitleAndIcon'
-export default {
-  name: 'bilibili',
-  data() {
-    return {
+  import { setTitleAndIcon } from '@/utils/setTitleAndIcon'
 
+  export default {
+    name: 'bilibili',
+    data() {
+      return {}
+    },
+    mounted() {
+      setTitleAndIcon(this.$route)
     }
-  },
-  mounted() {
-    setTitleAndIcon(this.$route)
   }
-}
 </script>
 
 <style lang="less">
@@ -108,7 +212,6 @@ export default {
   .fl, .fr {
     display: inline;
   }
-
   .bili-header-m {
     font: 12px Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
     position: relative;
@@ -123,7 +226,6 @@ export default {
         width: 980px;
       }
     }
-
     .bili-icon {
       display: inline-block;
       background-image: url("https://static.hdslb.com/images/base/icons.png");
@@ -146,48 +248,44 @@ export default {
       height: 42px;
       color: #222;
       .nav-con {
-
-        ul {
-          list-style: none;
-          .nav-item {
-            float: left;
-            text-align: center;
-            height: 42px;
-            line-height: 42px;
-            background-color: hsla(0, 0%, 100%, 0);
-            position: relative;
-            transition: all .3s;
-            &:hover {
-              background-color: hsla(0, 0%, 100%, .3);
+        .nav-item {
+          float: left;
+          text-align: center;
+          height: 42px;
+          line-height: 42px;
+          background-color: hsla(0, 0%, 100%, 0);
+          position: relative;
+          transition: all .3s;
+          &:hover {
+            background-color: hsla(0, 0%, 100%, .3);
+          }
+          &.home {
+            margin-left: -10px;
+            padding-left: 12px;
+            a {
+              padding-left: 20px;
             }
-            &.home {
-              margin-left: -10px;
-              padding-left: 12px;
-              a {
-                padding-left: 20px;
-              }
-              .bili-icon {
-                position: absolute;
-                width: 17px;
-                height: 14px;
-                left: 10px;
-                top: 12px;
-                background-position: -919px -88px;
-              }
+            .bili-icon {
+              position: absolute;
+              width: 17px;
+              height: 14px;
+              left: 10px;
+              top: 12px;
+              background-position: -919px -88px;
             }
-            &.mobile {
-              padding: 0 10px;
-              a {
-                display: inline-block;
-                padding: 0;
-              }
+          }
+          &.mobile {
+            padding: 0 10px;
+            a {
+              display: inline-block;
+              padding: 0;
             }
-            .t {
-              color: #222;
-              height: 100%;
-              display: block;
-              padding: 0 8px;
-            }
+          }
+          .t {
+            color: #222;
+            height: 100%;
+            display: block;
+            padding: 0 8px;
           }
         }
       }
@@ -229,7 +327,9 @@ export default {
         box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
       }
     }
-
+    ul {
+      list-style: none;
+    }
     .head-banner {
       position: relative;
       height: 170px;
@@ -318,5 +418,14 @@ export default {
         }
       }
     }
+  }
+
+  .primary-menu {
+    position: relative;
+    height: 50px;
+    padding: 8px 0 0;
+    margin-bottom: 4px;
+    z-index: 99;
+    border-bottom: 1px solid #eee;
   }
 </style>
