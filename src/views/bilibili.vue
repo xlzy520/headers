@@ -436,10 +436,52 @@
         display: block;
         position: relative;
         margin-right: 0;
+        &.home{
+          margin-right: 9px;
+          &>a{
+            width: auto;
+            background: url("https://static.hdslb.com/images/base/icons.png") -660px -1170px no-repeat;
+            .nav-name{
+              position: relative;
+              top: 15px;
+              line-height: 20px;
+            }
+          }
+        }
         &>a{
           width: 48px;
           text-align: center;
           display: block;
+          &>.num-wrap{
+            position: absolute;
+            top: 8px;
+            left: 0;
+            height: 14px;
+            width: 100%;
+            text-align: center;
+            &>span{
+              display: inline-block;
+              vertical-align: top;
+              border-radius: 3px;
+              transform: scale(.85);
+              height: 12px;
+              line-height: 14px;
+              max-width: 28px;
+              padding: 1px 3px;
+              font-family: sans-serif;
+              color: #fff;
+              background-color: #ffafc9;
+            }
+          }
+          &>.nav-name{
+            display: inline-block;
+            vertical-align: middle;
+            padding-top: 8px;
+            height: 40px;
+            line-height: 50px;
+            font-size: 12px;
+            color: #222;
+          }
         }
       }
     }
