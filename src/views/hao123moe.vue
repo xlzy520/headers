@@ -34,7 +34,7 @@ export default {
 
     }
   },
-  mounted() {
+  created() {
     setTitleAndIcon(this.$route)
   }
 }

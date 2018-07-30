@@ -1,10 +1,19 @@
 <template>
+  <header>
 
+  </header>
 </template>
 
 <script>
+import { setTitleAndIcon } from '@/utils/setTitleAndIcon'
 export default {
-  name: 'banciyuan'
+  name: 'banciyuan',
+  data() {
+    return {}
+  },
+  created() {
+    setTitleAndIcon(this.$route)
+  }
 }
 </script>
 

@@ -174,7 +174,7 @@
     data() {
       return {}
     },
-    mounted() {
+    created() {
       setTitleAndIcon(this.$route)
     }
   }
