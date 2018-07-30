@@ -94,9 +94,13 @@
             </a></li>
             <li><a href="#">
               <div class="num-wrap"><span>764</span>
-
               </div>
               <div class="nav-name">科技</div>
+            </a></li>
+            <li><a href="#">
+              <div class="num-wrap"><span>999+</span>
+              </div>
+              <div class="nav-name">生活</div>
             </a></li>
             <li><a href="#">
               <div class="num-wrap"><span>62</span>
@@ -134,25 +138,25 @@
               </div>
               <div class="nav-name">放映厅</div>
             </a></li>
-            <li><a href="#">
+            <li class="side-nav zl"><a href="#" class="side-link">
               <i class="zhuanlan"></i>
               <span>专栏</span>
             </a></li>
-            <li><a href="#">
+            <li class="side-nav nav-square"><a href="#" class="side-link">
               <i class="square"></i>
               <span>广场</span>
             </a></li>
-            <li><a href="#">
+            <li class="side-nav"><a href="#" class="side-link">
               <i class="live"></i>
               <span>直播</span>
             </a></li>
-            <li><a href="#">
+            <li class="side-nav"><a href="#" class="side-link">
               <i class="blackroom"></i>
               <span>小黑屋</span>
             </a></li>
           </ul>
           <div class="gif-menu nav-gif">
-            <a href="#">
+            <a href="#" class="random-p">
               <img src="https://i2.hdslb.com/bfs/active/d7ba9c4bd660ec09ac68e78d5ac47c1d10257d7b.gif" alt="">
             </a>
           </div>
@@ -424,11 +428,11 @@
 
   .primary-menu {
     position: relative;
+    width: 980px;
     height: 50px;
     padding: 8px 0 0;
     margin-bottom: 4px;
     z-index: 99;
-    border-bottom: 1px solid #eee;
     .nav-menu{
       display: inline-block;
       &>li{
@@ -436,19 +440,7 @@
         display: block;
         position: relative;
         margin-right: 0;
-        &.home{
-          margin-right: 9px;
-          &>a{
-            width: auto;
-            background: url("https://static.hdslb.com/images/base/icons.png") -660px -1170px no-repeat;
-            .nav-name{
-              position: relative;
-              top: 15px;
-              line-height: 20px;
-            }
-          }
-        }
-        &>a{
+        &>a:not(.side-link){
           width: 48px;
           text-align: center;
           display: block;
@@ -482,6 +474,74 @@
             font-size: 12px;
             color: #222;
           }
+        }
+        &.home{
+          margin-right: 9px;
+          &>a{
+            width: auto;
+            background: url("https://static.hdslb.com/images/base/icons.png") -660px -1170px no-repeat;
+            .nav-name{
+              position: relative;
+              top: 15px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+      .side-nav{
+        margin: 0 4px;
+        width: 40px;
+        text-align: center;
+        .side-link{
+          display: inline-block;
+          position: relative;
+          overflow: hidden;
+          zoom: 1;
+          i{
+           display: block;
+            width: 18px;
+            height: 18px;
+            margin: 3px auto 2px;
+            background: url("https://static.hdslb.com/images/base/icons.png") no-repeat;
+            &.zhuanlan{
+              background-position: -87px -1814px;
+            }
+            &.square{
+              background-position: -87px -2006px;
+            }
+            &.live{
+              background-position: -87px -1878px;
+            }
+            &.blackroom{
+              background-position: -87px -1942px;
+            }
+          }
+          span{
+            display: block;
+            font-size: 12px;
+            color: #222;
+          }
+        }
+      }
+    }
+    .nav-gif{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50px;
+      padding: 4px 0;
+      .random-p{
+        width: 69px;
+        height: 40px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 3px 0;
+        overflow: hidden;
+        >img{
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          border-radius: 3px;
         }
       }
     }
