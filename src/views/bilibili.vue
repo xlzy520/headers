@@ -53,107 +53,96 @@
       <div class="bili-wrapper">
         <div id="primary_menu" class="primary-menu">
           <ul class="nav-menu">
+            <li class="home"><a href="#">
+              <div class="nav-name">首页</div>
+            </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>742</span>
+                <div class="nav-name">动画</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>45</span>
+                <div class="nav-name">番剧</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>36</span>
+                <div class="nav-name">国创</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>999+</span>
+                <div class="nav-name">音乐</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>122</span>
+                <div class="nav-name">舞蹈</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>999+</span>
+                <div class="nav-name">游戏</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>764</span>
+                <div class="nav-name">科技</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>62</span>
+                <div class="nav-name">鬼畜</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>206</span>
+                <div class="nav-name">时尚</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>17</span>
+                <div class="nav-name">广告</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>999+</span>
+                <div class="nav-name">娱乐</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>999+</span>
+                <div class="nav-name">影视</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
+              <div class="num-wrap"><span>4</span>
+                <div class="nav-name">放映厅</div>
               </div>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
-              </div>
+              <i class="zhuanlan"></i>
+              <span>专栏</span>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
-              </div>
+              <i class="square"></i>
+              <span>广场</span>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
-              </div>
+              <i class="live"></i>
+              <span>直播</span>
             </a></li>
             <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
-              </div>
-            </a></li>
-            <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
-              </div>
-            </a></li>
-            <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
-              </div>
-            </a></li>
-            <li><a href="#">
-              <div class="num-wrap"><span></span>
-                <div class="nav-name"></div>
-              </div>
+              <i class="blackroom"></i>
+              <span>小黑屋</span>
             </a></li>
           </ul>
+          <div class="gif-menu nav-gif">
+            <a href="#">
+              <img src="https://i2.hdslb.com/bfs/active/d7ba9c4bd660ec09ac68e78d5ac47c1d10257d7b.gif" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -427,5 +416,8 @@
     margin-bottom: 4px;
     z-index: 99;
     border-bottom: 1px solid #eee;
+    .nav-menu{
+      display: inline-block;
+    }
   }
 </style>
