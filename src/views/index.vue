@@ -7,13 +7,13 @@
       <div class="headers-content">
         <ul class="headers-list">
           <li class="header-item">
-            <router-link class="header-item-link hao123" to="/hao123moe">好123萌主页</router-link>
+            <router-link class="header-item-link" to="/hao123moe">好123萌主页</router-link>
           </li>
           <li class="header-item">
-            <router-link class="header-item-link bilibili" to="/bilibili">哔哩哔哩</router-link>
+            <router-link class="header-item-link" to="/bilibili">哔哩哔哩</router-link>
           </li>
           <li class="header-item">
-            <router-link class="header-item-link banciyuan" to="#">半次元</router-link>
+            <router-link class="header-item-link" to="/banciyuan">半次元</router-link>
           </li>
         </ul>
       </div>
