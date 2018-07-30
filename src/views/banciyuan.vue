@@ -39,13 +39,9 @@
         </div>
       </div>
       <div class="search-box">
-        <form>
-          <div class="search-input search-input--flat l-nav__search">
-            <span class="twitter-typeahead">
-              <input/>
-            </span>
-            <input type="submit"/>
-          </div>
+        <form class="searchform">
+          <input value class="search-keyword" placeholder="搜索COS、绘画、文、用户..."/>
+          <button class="search-submit" type="submit"></button>
         </form>
       </div>
     </header>
@@ -74,9 +70,6 @@ export default {
     line-height: 18px;
     color: #333;
     background-color: #f0f0f0;
-  }
-  a{
-    color: #4d70a5;
   }
   #l_header{
     position: fixed;
@@ -217,7 +210,44 @@ export default {
       }
     }
 
-
+    .search-box{
+      margin-right: 15px;
+      float: right;
+      .searchform{
+        position: relative;
+        display: inline-block;
+        height: 34px;
+        width: 250px;
+        margin-top: 8px;
+        border-radius: 4px;
+        border: 1px solid #ebeced;
+        background-color: #ebeced;
+        box-sizing: border-box;
+        .search-keyword{
+          float: left;
+          background-color: transparent;
+          border-radius: 4px;
+          border: 0;
+          padding: 0 28px 0 10px;
+          font-size: 14px;
+          height: 34px;
+          outline: none;
+        }
+        .search-submit{
+          position: absolute;
+          right: 0;
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          background-image: url("https://pubin.bcyimg.com/Image/icon/search-secondary-72a4ffc650.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          outline: none;
+          border: 0;
+          background-color: transparent;
+        }
+      }
+    }
   }
   .site-nav__item,
   .headerItem{
