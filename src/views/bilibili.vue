@@ -1,7 +1,7 @@
 <template>
   <div class="bilibili">
     <div class="bili-header-m">
-      <div class="nav_menu">
+      <div class="nav-menu">
         <div class="blur-bg"></div>
         <div class="nav-mask"></div>
         <div class="bili-wrapper clearfix">
@@ -242,7 +242,7 @@
         height: 21px;
       }
     }
-    .nav_menu {
+    .nav-menu {
       position: relative;
       z-index: 200;
       height: 42px;
