@@ -25,6 +25,14 @@ export default new Router({
         iconUrl: 'https://static.hdslb.com/images/favicon.ico'
       },
       component: () => import('@/views/bilibili')
+    },
+    {
+      path: '/banciyuan',
+      name: '我的首页 | 半次元-二次元爱好者社区',
+      meta: {
+        iconUrl: 'https://pubin.bcyimg.com/Image/favicon-334e2c1c68.ico?20140414'
+      },
+      component: () => import('@/views/banciyuan')
     }
   ]
 })
