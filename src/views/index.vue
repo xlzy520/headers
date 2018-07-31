@@ -30,7 +30,7 @@ export default {
 <style lang="less">
   @myBlue: #1296db;
   body {
-    cursor: url("../assets/cursor.cur"), auto;
+    cursor: url("../../static/cursor.cur"), auto;
     width: 100%;
     min-height: 100vh;
     line-height: 1.15;
