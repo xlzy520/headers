@@ -1,4 +1,3 @@
-const $=require('jquery')
 function render(template, context) {
 
 	var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
@@ -37,7 +36,7 @@ $(document).on('copy', function (){
 
 $.ajax({
 	cache: true,
-	url: "../../static/live2d/waifu-tips.json",
+	url: "./static/live2d/waifu-tips.json",
 	dataType: "json",
 	success: function (result){
 		$.each(result.mouseover, function (index, tips){

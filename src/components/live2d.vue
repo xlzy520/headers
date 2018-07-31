@@ -15,7 +15,7 @@ export default {
     }
   },
   mounted() {
-    window.loadlive2d('live2d', '.././static/live2d/pio/pio.model.json', 0.5)
+    window.loadlive2d('live2d', './static/live2d/pio/pio.model.json', 0.5)
   },
   methods: {
 
