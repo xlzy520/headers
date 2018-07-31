@@ -28,9 +28,7 @@ export default {
     const browserVersion = window.navigator.appVersion
     const ieReg = new RegExp('MISE|rv:11.0')
     const isIe = ieReg.test(browserVersion.toString())
-    if (isIe) {
-      document.body.style.cursor = 'default'
-    }
+    if (isIe) document.body.style.cursor = 'default'
   }
 }
 </script>
