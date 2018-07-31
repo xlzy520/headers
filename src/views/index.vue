@@ -23,7 +23,15 @@
 
 <script>
 export default {
-  name: 'index'
+  name: 'index',
+  created() {
+    const browserVersion = window.navigator.appVersion
+    const ieReg = new RegExp('MISE|rv:11.0')
+    const isIe = ieReg.test(browserVersion.toString())
+    if (isIe) {
+      document.body.style.cursor = 'default'
+    }
+  }
 }
 </script>
 
